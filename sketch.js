@@ -65,7 +65,6 @@ function preload() {
   // mouthAccent = loadSound("b1.mp3");
   font = loadFont("FreeSans.ttf");
   
-  imgd = loadImage('desktop.png');
 }
 
 function setup() {
@@ -110,10 +109,7 @@ function modelReady() {
 }
 
 function draw() {
- if(mode == 0){
-	image(imgd,0,0,width,height);}
-	if(mouseIsPressed == true){mode=1
-}
+
 	
     translate(video.width, 0);
   //then scale it by -1 in the x-axis
@@ -255,8 +251,5 @@ function keyPressed() {
   }
 }
 
-function touchStarted() {
-mode=1
-}
 
 
